@@ -1,4 +1,3 @@
-ifeq ($(CONFIG_BOARD_XIAOMI),y)
 ifeq ($(CONFIG_BOARD_XIAOMI_SM8250),y)
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 
@@ -93,8 +92,6 @@ vangogh-sm7250-overlay.dtbo-base := lito.dtb lito-v2.dtb
 endif
 
 endif
-endif
-
 else
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
         dtbo-$(CONFIG_ARCH_KONA) += \
